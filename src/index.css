@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    /* overflow-x: hidden; */
+}
+
+:is(h1, h2, h3, h4) {
+    @apply text-[hsl(229,31%,21%)] font-bold;
+}
+p {
+    @apply text-[hsl(229,8%,60%)];
+}
+ul li {
+    @apply hover:text-[hsl(0,94%,66%)] cursor-pointer;
+}
+.attribution {
+    padding-inline: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: hsl(228, 68%, 63%);
+}
+
+.hero-bg {
+    @apply absolute lg:w-[120%] w-full h-3/4 bottom-0 -right-[20%] lg:-right-[50%] bg-[hsl(231,69%,60%)] rounded-l-full -z-10;
+}
+.tab1-bg {
+    @apply absolute w-[140%] h-[95%] lg:top-16 md:top-20 top-12 right-14
+    bg-[hsl(231,69%,60%)] rounded-r-full -z-10;
+}
+.tab2-bg {
+    @apply absolute w-[140%] lg:h-[84%] h-[88%] lg:top-[20%] top-[15%] 
+    lg:right-[14%] right-[20%] bg-[hsl(231,69%,60%)] rounded-r-full -z-10;
+}
+.tab3-bg {
+    @apply absolute w-[140%] lg:h-[90%] h-[95%] lg:top-20 sm:top-16 top-10 lg:right-10 right-12
+    bg-[hsl(231,69%,60%)] rounded-r-full -z-10;
+}
+
+.hover-blue-btn {
+    @apply hover:text-[hsl(231,69%,60%)] hover:bg-transparent hover:border-2 hover:border-[hsl(231,69%,60%)] transition-all duration-200 hover:font-bold;
+}
+.hover-red-btn {
+    @apply hover:text-[hsl(0,94%,66%)] hover:bg-transparent hover:border-2 hover:border-[hsl(0,94%,66%)]  transition-all duration-200 hover:font-bold;
+}
+.hover-darkblue-btn {
+    @apply hover:text-[hsl(229,31%,21%)] hover:bg-transparent hover:border-2 hover:border-[hsl(229,31%,21%)] transition-all duration-200 hover:font-bold;
+}
+
+@media (min-width: 1024px) {
+    * {
+        font-size: 18px;
+    }
+}
