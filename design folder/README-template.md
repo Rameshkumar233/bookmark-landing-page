@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL: [Solution](https://your-solution-url.com)
--   Live Site URL: [Live site](https://your-live-site-url.com)
+-   Solution URL: [Solution](https://github.com/Rameshkumar233/bookmark-landing-page)
+-   Live Site URL: [Live site](https://rameshkumar233.github.io/bookmark-landing-page/)
 
 ## My process
 
